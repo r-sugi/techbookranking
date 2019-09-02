@@ -1,0 +1,36 @@
+.box-card {
+  margin-bottom: 2em;
+}
+.book-bottons {
+  width: 80%;
+  display: flex;
+  margin: 1rem auto 0.2rem;
+  .el-button {
+    width: 100%;
+    font-weight: bold;
+  }
+  a {
+    width: 100%;
+  }
+}
+.book-description {
+  padding: 0.5%;
+  .book-author,
+  .book-publish-date {
+    margin-bottom: 0.5rem;
+  }
+  .label {
+    margin-right: 0.5rem;
+  }
+}
+.book-referrer-header {
+  color: #888;
+  font-size: 0.9rem;
+  margin: 0.5rem 0;
+}
+.book-top-posts {
+  padding-left: 40px;
+  .book-post-title:not(:last-child) {
+    margin-bottom: 0.5rem;
+  }
+}

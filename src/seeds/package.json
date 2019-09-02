@@ -1,0 +1,12 @@
+{
+  "name": "client-api-mock",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "json-server": "^0.15.0"
+  }
+}

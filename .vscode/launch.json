@@ -1,0 +1,40 @@
+{
+  // IntelliSense を使用して利用可能な属性を学べます。
+  // 既存の属性の説明をホバーして表示します。
+  // 詳細情報は次を確認してください: https://go.microsoft.com/fwlink/?linkid=830387
+
+  // qiita ref: https://qiita.com/idani/items/ac638d5a0786aaefb8cf
+  //   you can place breakpoint .js file
+  //   NOTE: you can place debugger in file.vue
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "chrome",
+      "request": "launch",
+      "name": "Launch Chrome",
+      "url": "http://localhost:8080",
+      "webRoot": "${workspaceFolder}",
+      "runtimeArgs": [
+        "--remote-debugging-port=9222"
+      ] //?
+    },
+    {
+        "type": "node",
+        "request": "launch",
+        "name": "Launch via NPM",
+        "runtimeExecutable": "npm",
+        "runtimeArgs": [
+            "run-script",
+            "debug"
+        ],
+        "port": 9229,
+        "sourceMaps": true
+    }
+  ],
+  "compounds": [
+    {
+      "name": "Full-stack",
+      "configurations": ["Launch via NPM", "Launch Chrome"]
+    }
+  ]
+}

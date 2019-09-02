@@ -1,0 +1,18 @@
+$main-brand-white: #fff;
+$main-brand-color: #55c500;
+$text-link-active-color: #337ab7;
+
+$breakpoint-sm: 400px !default;
+$breakpoint-md: 768px !default;
+$breakpoint-lg: 1000px !default;
+$breakpoints: (
+  'sm': "screen and (min-width: #{$breakpoint-sm})",
+  'md': "screen and (min-width: #{$breakpoint-md})",
+  'lg': "screen and (min-width: #{$breakpoint-lg})",
+) !default;
+
+@mixin mq($breakpoint: md) {
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}
